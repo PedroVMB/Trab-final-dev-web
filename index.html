@@ -1,95 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Delícias do Pepeu</title>
-
-  <!-- Vincula o arquivo de estilos CSS -->
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Fonte personalizada do Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Botão para alternar entre português e inglês -->
-  <button id="lang-toggle">EN</button>
-
-  <!-- Cabeçalho principal com título e menu de navegação -->
   <header>
-    <h1 data-pt="Delícias do Pepeu" data-en="Pepeu's Delights">Delícias do Pepeu</h1>
-    <nav>
-      <ul>
-        <!-- Cada item do menu possui texto em dois idiomas -->
-        <li><a href="#menu" data-pt="Cardápio" data-en="Menu">Cardápio</a></li>
-        <li><a href="#about" data-pt="Sobre" data-en="About">Sobre</a></li>
-        <li><a href="#contact" data-pt="Contato" data-en="Contact">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="container header-content">
+      <h1 data-pt="Delícios do Pepeu" data-en="Pepeu's Delights">Delícias do Pepeu</h1>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="#sobre" class="nav-link" data-pt="Sobre" data-en="About">Sobre</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#contato" class="nav-link" data-pt="Contato" data-en="Contact">Contato</a></li>
+        </ul>
+      </nav>
+      <button id="lang-toggle">EN</button>
+    </div>
   </header>
 
-  <!-- Seção do carrossel de pratos -->
-  <section id="menu" class="carousel">
-    <h2 data-pt="Nosso Cardápio" data-en="Our Menu">Nosso Cardápio</h2>
+  <main>
+    <section id="sobre" class="section">
+      <div class="container flex-column">
+        <h2 data-pt="Sobre Nós" data-en="About Us">Sobre Nós</h2>
+        <p data-pt="Somos apaixonados por gastronomia! Trazemos receitas únicas com um toque caseiro."
+           data-en="We are passionate about food! We bring unique recipes with a homemade touch.">
+          Somos apaixonados por gastronomia! Trazemos receitas únicas com um toque caseiro.
+        </p>
+        <img 
+          src="https://servircomrequinte.francobachot.com.br/wp-content/uploads/2020/08/post_thumbnail-5119340b39b314917440ed22562078eb.jpg"
+          alt="Interior acolhedor do restaurante"
+          class="responsive-img"
+        />
+      </div>
+    </section>
 
-    <!-- Botões para navegar no carrossel -->
-    <button class="carousel-btn prev">‹</button>
-    <div class="carousel-track">
-      <!-- Cada card representa um prato -->
-      <div class="card" data-pt="Prato 1" data-en="Dish 1">Prato 1</div>
-      <div class="card" data-pt="Prato 2" data-en="Dish 2">Prato 2</div>
-      <div class="card" data-pt="Prato 3" data-en="Dish 3">Prato 3</div>
-      <div class="card" data-pt="Prato 4" data-en="Dish 4">Prato 4</div>
-    </div>
-    <button class="carousel-btn next">›</button>
-  </section>
+    <section id="menu" class="section">
+      <div class="container flex-column">
+        <h2 data-pt="Nosso Menu" data-en="Our Menu">Nosso Menu</h2>
+        <div class="carousel">
+          <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+          <div class="carousel-track">
+            <div class="card">
+              <h3>Feijoada</h3>
+              <p data-en="Nega Su's Feijoada" data-pt="Feijoada da Nega Su">Feijoada da Nega Su</p>
+              <span class="price" data-en="$4.25" data-pt="R$ 25,00">R$ 25,00</span>
+            </div>
+            <div class="card">
+              <h3>Lasanha</h3>
+              <p data-en="Garfield's Lasagna" data-pt="Lasanha do Garfield">Lasanha do Garfield</p>
+              <span class="price" data-pt="R$ 30,00" data-en="$5.10">R$ 30,00</span>
+            </div>
+            <div class="card">
+              <h3>Moqueca</h3>
+              <p data-pt="Moqueca Baiana com arroz e farofa" data-en="Bahian Moqueca with rice and farofa">Moqueca Baiana com arroz e farofa</p>
+              <span class="price" data-pt="R$ 35,00" data-en="$5.95">R$ 35,00</span>
+            </div>
+            <div class="card">
+              <h3>Escondidinho</h3>
+              <p data-pt="Carne de sol com purê de mandioca" data-en="Sun-dried meat with cassava puree">Carne de sol com purê de mandioca</p>
+              <span class="price" data-pt="R$ 28,00" data-en="$4,77">R$ 28,00</span>
+            </div>
+          </div>
+          <button class="carousel-btn next" aria-label="Próximo">&#10095;</button>
+        </div>
+      </div>
+    </section>
 
-  <!-- Seção "Sobre o restaurante" -->
-  <section id="about">
-    <h2 data-pt="Sobre Nós" data-en="About Us">Sobre Nós</h2>
-    <p data-pt="Somos um restaurante familiar apaixonado pela boa comida." 
-       data-en="We are a family-owned restaurant passionate about good food.">
-      Somos um restaurante familiar apaixonado pela boa comida.
-    </p>
-  </section>
+    <section id="contato" class="section">
+      <div class="container flex-column">
+        <h2 data-pt="Entre em Contato" data-en="Contact Us">Entre em Contato</h2>
+        <form id="contact-form" aria-label="Formulário de contato">
+          <label for="nome" data-pt="Nome" data-en="Name">Nome:</label>
+          <input type="text" id="nome" name="nome" required >
 
-  <!-- Seção de contato com formulário -->
-  <section id="contact">
-    <h2 data-pt="Fale Conosco" data-en="Contact Us">Fale Conosco</h2>
-    <form id="contact-form">
-      <!-- Campo nome -->
-      <label data-pt="Nome:" data-en="Name:">Nome:</label>
-      <input type="text" required />
+          <label for="endereco" data-pt="Endereço" data-en="Address">Endereço:</label>
+          <input type="text" id="endereco" name="endereco" required>
 
-      <!-- Campo e-mail -->
-      <label data-pt="Email:" data-en="Email:">Email:</label>
-      <input type="email" required />
+          <label for="pedido" data-pt="Pedido" data-en="Order">Pedido:</label>
+          <textarea id="pedido" name="mensagem" rows="4" required ></textarea>
 
-      <!-- Campo mensagem -->
-      <label data-pt="Mensagem:" data-en="Message:">Mensagem:</label>
-      <textarea required></textarea>
+          <button type="submit" data-pt="Enviar" data-en="Send">Enviar</button>
+        </form>
 
-      <!-- Botão de envio -->
-      <button type="submit" data-pt="Enviar" data-en="Send">Enviar</button>
-    </form>
-  </section>
+        <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.968078859692!2d-38.44697288471352!3d-12.92793929087119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161b2b415c1453%3A0x1a4be749e9172a9f!2sCentro%20Universit%C3%A1rio%20Jorge%20Amado%20-%20UNIJORGE%20(Campus%20Paralela)!5e0!3m2!1spt-BR!2sbr!4v1713026420804!5m2!1spt-BR!2sbr"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              aria-label="Mapa da Unijorge Campus Paralela"
+            ></iframe>
+        </div>          
+      </div>
+    </section>
+  </main>
 
-  <!-- Rodapé com mapa do Google Maps -->
   <footer>
-    <h3 data-pt="Onde estamos" data-en="Where we are">Onde estamos</h3>
-    <!-- Mapa incorporado do Google Maps -->
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086376121937!2d-122.41941518468147!3d37.77492927975974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808f74b0b2c3%3A0x3dcd3c1f3c9ec52a!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1601234567890"
-      width="100%"
-      height="250"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-    ></iframe>
+    <div class="container">
+      <p data-en="&copy; 2025 Pepeu's Delights - All rights reserved" data-pt="&copy; 2025 Delícias do Pepeu - Todos os direitos reservados">
+            &copy; 2025 Delícias do Pepeu - Todos os direitos reservados
+      </p>
+    </div>
   </footer>
 
-  <!-- Vincula o script JS ao final para carregar após o HTML -->
   <script src="script.js"></script>
 </body>
 </html>
