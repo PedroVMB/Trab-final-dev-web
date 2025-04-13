@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delícias do Pepeu</title>
+
+  <!-- Vincula o arquivo de estilos CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonte personalizada do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Botão para alternar entre português e inglês -->
+  <button id="lang-toggle">EN</button>
+
+  <!-- Cabeçalho principal com título e menu de navegação -->
+  <header>
+    <h1 data-pt="Delícias do Pepeu" data-en="Pepeu's Delights">Delícias do Pepeu</h1>
+    <nav>
+      <ul>
+        <!-- Cada item do menu possui texto em dois idiomas -->
+        <li><a href="#menu" data-pt="Cardápio" data-en="Menu">Cardápio</a></li>
+        <li><a href="#about" data-pt="Sobre" data-en="About">Sobre</a></li>
+        <li><a href="#contact" data-pt="Contato" data-en="Contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção do carrossel de pratos -->
+  <section id="menu" class="carousel">
+    <h2 data-pt="Nosso Cardápio" data-en="Our Menu">Nosso Cardápio</h2>
+
+    <!-- Botões para navegar no carrossel -->
+    <button class="carousel-btn prev">‹</button>
+    <div class="carousel-track">
+      <!-- Cada card representa um prato -->
+      <div class="card" data-pt="Prato 1" data-en="Dish 1">Prato 1</div>
+      <div class="card" data-pt="Prato 2" data-en="Dish 2">Prato 2</div>
+      <div class="card" data-pt="Prato 3" data-en="Dish 3">Prato 3</div>
+      <div class="card" data-pt="Prato 4" data-en="Dish 4">Prato 4</div>
+    </div>
+    <button class="carousel-btn next">›</button>
+  </section>
+
+  <!-- Seção "Sobre o restaurante" -->
+  <section id="about">
+    <h2 data-pt="Sobre Nós" data-en="About Us">Sobre Nós</h2>
+    <p data-pt="Somos um restaurante familiar apaixonado pela boa comida." 
+       data-en="We are a family-owned restaurant passionate about good food.">
+      Somos um restaurante familiar apaixonado pela boa comida.
+    </p>
+  </section>
+
+  <!-- Seção de contato com formulário -->
+  <section id="contact">
+    <h2 data-pt="Fale Conosco" data-en="Contact Us">Fale Conosco</h2>
+    <form id="contact-form">
+      <!-- Campo nome -->
+      <label data-pt="Nome:" data-en="Name:">Nome:</label>
+      <input type="text" required />
+
+      <!-- Campo e-mail -->
+      <label data-pt="Email:" data-en="Email:">Email:</label>
+      <input type="email" required />
+
+      <!-- Campo mensagem -->
+      <label data-pt="Mensagem:" data-en="Message:">Mensagem:</label>
+      <textarea required></textarea>
+
+      <!-- Botão de envio -->
+      <button type="submit" data-pt="Enviar" data-en="Send">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Rodapé com mapa do Google Maps -->
+  <footer>
+    <h3 data-pt="Onde estamos" data-en="Where we are">Onde estamos</h3>
+    <!-- Mapa incorporado do Google Maps -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086376121937!2d-122.41941518468147!3d37.77492927975974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808f74b0b2c3%3A0x3dcd3c1f3c9ec52a!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1601234567890"
+      width="100%"
+      height="250"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </footer>
+
+  <!-- Vincula o script JS ao final para carregar após o HTML -->
+  <script src="script.js"></script>
+</body>
+</html>
