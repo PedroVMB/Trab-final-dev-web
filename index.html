@@ -3,65 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Delícias do Pepeu</title>
+  <title>Café & Sabor</title>
   <link rel="stylesheet" href="styles.css">
-</head>
+  <link rel="icon" href="Fotos/LogoSite.jpg" type="image/png">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Fim Bootstrap Icons -->
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=TrrI18lM2A6XVy4UIudGZS_V-Max4x0MnjuAb2oW6bdnKXazcfG6bmIQiyFdggZ2fnTw7tR1V-hNSFT-Jtf9zUZ3xjoWXm4z5vhjc6iBPCl1tS860u5q_oShsd8hOs-V18J-PGT7_f74KCXULEZi_l1VSuxLsAAqFd4EXbe54UEyeBPEo33wDS4RJH9YR3faTY5BtDbJzvMKQXwHPNuPR5vE1djys2FoMcQnL1P4lslse6WMvJDu_Ftt0sg1iKvC606c3wAtu-9dCe2M9Cs5nw" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvMTM0NzMyNTUzODY5NTY0MzE2Ny8xMzY2NzQ4NTI5MTE2MDUzNjI0L2luZGV4Lmh0bWw_ZXg9NjgxMjEzNDImaXM9NjgxMGMxYzImaG09YmE4ZjAzMDc0ZTIxMGQ2YmQ1ZmNkNjU3Yjc5Y2Y1ZGVlNmJhN2U5ZmJlNzU5OWM4ZWM4ZjMzOGY4NTU3YTI4YyY"/></head>
 <body>
   <header>
     <div class="container header-content">
-      <h1 data-pt="Delícios do Pepeu" data-en="Pepeu's Delights">Delícias do Pepeu</h1>
+      <div>
+        <img src="Fotos/LogoSite.jpeg"  class="Edição-logo" alt="">
+      </div>
+      <h1 data-pt="Café & Sabor" data-en="Coffee & Flavor">Café & Sabor</h1>
       <nav aria-label="Navegação principal">
         <ul>
-          <li><a href="#sobre" class="nav-link" data-pt="Sobre" data-en="About">Sobre</a></li>
+          <li><a href="#Sobre" class="nav-link" data-pt="Sobre" data-en="About">Sobre</a></li>
           <li><a href="#menu" class="nav-link">Menu</a></li>
           <li><a href="#contato" class="nav-link" data-pt="Contato" data-en="Contact">Contato</a></li>
         </ul>
       </nav>
       <button id="lang-toggle">EN</button>
+    
+    <div>
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+      <div class="ball"></div>
+      </label>
     </div>
+  
   </header>
 
   <main>
-    <section id="sobre" class="section">
+    <section id="Sobre" class="section">
       <div class="container flex-column">
         <h2 data-pt="Sobre Nós" data-en="About Us">Sobre Nós</h2>
-        <p data-pt="Somos apaixonados por gastronomia! Trazemos receitas únicas com um toque caseiro."
-           data-en="We are passionate about food! We bring unique recipes with a homemade touch.">
-          Somos apaixonados por gastronomia! Trazemos receitas únicas com um toque caseiro.
+        <p data-pt="Delicie-se com nossa variedade de pratos no café da manhã e jantar. Venha experimentar o melhor do sabor regional!"
+           data-en="Enjoy our variety of breakfast and dinner dishes. Come and experience the best of regional flavors!">
+           Delicie-se com nossa variedade de pratos no café da manhã e jantar. Venha experimentar o melhor do sabor regional!
         </p>
         <img 
-          src="https://servircomrequinte.francobachot.com.br/wp-content/uploads/2020/08/post_thumbnail-5119340b39b314917440ed22562078eb.jpg"
+          src="Fotos/Café&SaborEST.jpeg"
           alt="Interior acolhedor do restaurante"
-          class="responsive-img"
-        />
+          class="responsive-img">
+
+       <img 
+        src="Fotos/NossosPratos.jpeg"
+        alt="imagem logo" 
+        class="responsive-img">
       </div>
     </section>
 
-    <section id="menu" class="section">
+    <section id="menu" class="informações">
       <div class="container flex-column">
         <h2 data-pt="Nosso Menu" data-en="Our Menu">Nosso Menu</h2>
         <div class="carousel">
           <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
           <div class="carousel-track">
             <div class="card">
-              <h3>Feijoada</h3>
-              <p data-en="Nega Su's Feijoada" data-pt="Feijoada da Nega Su">Feijoada da Nega Su</p>
-              <span class="price" data-en="$4.25" data-pt="R$ 25,00">R$ 25,00</span>
+              <h3>Cuscuz Recheado</h3>
+              <p data-en="couscous stuffed with sun-dried meat" data-pt="Cuscuz recheado">Cuscuz recheado com carne do sol</p>
+              <span class="price" data-en="$2.85" data-pt="R$ 16,00">R$ 16,00</span>
             </div>
             <div class="card">
-              <h3>Lasanha</h3>
-              <p data-en="Garfield's Lasagna" data-pt="Lasanha do Garfield">Lasanha do Garfield</p>
-              <span class="price" data-pt="R$ 30,00" data-en="$5.10">R$ 30,00</span>
+              <h3>Beiju</h3>
+              <p data-en="tapioca pancake with shredded meat" data-pt="Beiju com carne desfiada">Beiju</p>
+              <span class="price" data-pt="R$ 14,00" data-en="$2.50">R$ 14,00</span>
             </div>
             <div class="card">
-              <h3>Moqueca</h3>
-              <p data-pt="Moqueca Baiana com arroz e farofa" data-en="Bahian Moqueca with rice and farofa">Moqueca Baiana com arroz e farofa</p>
-              <span class="price" data-pt="R$ 35,00" data-en="$5.95">R$ 35,00</span>
+              <h3>Aipim misto</h3>
+              <p data-pt="Aimpim misto com carne do sol e calabresa" data-en="Mixed cassava with calabresa sausage and sun-dried meat">Aipim misto com carne do sol e calabresa</p>
+              <span class="price" data-pt="R$ 19,00" data-en="$3.40">R$ 19,00</span>
             </div>
             <div class="card">
-              <h3>Escondidinho</h3>
-              <p data-pt="Carne de sol com purê de mandioca" data-en="Sun-dried meat with cassava puree">Carne de sol com purê de mandioca</p>
-              <span class="price" data-pt="R$ 28,00" data-en="$4,77">R$ 28,00</span>
+              <h3>Aipim com carne do sol</h3>
+              <p data-pt="Aimpim misto com carne do sol" data-en="Mixed cassava with sun-dried meat">Aipim com carne do sol</p>
+              <span class="price" data-pt="R$ 16,00" data-en="$2.85">R$ 16,00</span>
+            </div>
+            <div class="card">
+              <h3>Pão com carne do sol e queijo coalho</h3>
+              <p data-pt="Pão com carne do sol e queijo coalho" data-en="Bread with sun-dried meat and curd cheese">Pão com carne do sol e queijo coalho</p>
+              <span class="price" data-pt="R$ 28,00" data-en="$4,77">R$ 28,00</span>  
+            </div>
+            <div class="card">
+              <h3>Bebida</h3>
+              <p data-pt="Jarra de suco de laranja 800ml " data-en="Orange juice jug 800m">Jarra de suco de laranja 800ml</p>
+              <span class="price" data-pt="R$ 10,OO" data-en="$1,78 $0,53">R$ 10,00 </span>
+            </div>
+            <div class="card">
+              <h3>Bolo de leite ninho</h3>
+              <p data-pt="Bolo de leite ninho" data-en="Nest milk cake">Bolo de leite ninho</p>
+              <span class="price" data-pt="R$ 5,OO" data-en="$00,89">R$ 5,00 </span>
             </div>
           </div>
           <button class="carousel-btn next" aria-label="Próximo">&#10095;</button>
@@ -73,24 +106,34 @@
       <div class="container flex-column">
         <h2 data-pt="Entre em Contato" data-en="Contact Us">Entre em Contato</h2>
         <form id="contact-form" aria-label="Formulário de contato">
-          <label for="nome" data-pt="Nome" data-en="Name">Nome:</label>
-          <input type="text" id="nome" name="nome" required >
+          <label for="nome" data-pt="Nome:" data-en="Name:">Nome:</label>
+          <input type="text" id="nome" name="nome" required="É necessário informar o nome" >
 
-          <label for="endereco" data-pt="Endereço" data-en="Address">Endereço:</label>
-          <input type="text" id="endereco" name="endereco" required>
+          <label for="endereco" data-pt="CEP:" data-en="Zip code:">CEP:</label>
+          <input type="text" id="CEP" name="CEP" required="É necessário informar o CEP">
 
-          <label for="pedido" data-pt="Pedido" data-en="Order">Pedido:</label>
-          <textarea id="pedido" name="mensagem" rows="4" required ></textarea>
+          <label for="endereco" data-pt="Email:" data-en="E-mail:">Email:</label>
+          <input type="text" id="Email" name="Email" required="É necessário informar o email">
+
+          <label for="endereco" data-pt="Número:" data-en="Number:">Número:</label>
+          <input type="text" id="Número" name="Número" required="É necessário informar o número">
+
+          <label for="endereco" data-pt="Data:" data-en="Date:">Data:</label>
+          <input type="date" id="data" name="data" required="É necessário informar a Data">
+          
+          <label for="pedido" data-pt="Pedido:" data-en="Order:">Pedido:</label>
+          <textarea id="pedido" name="mensagem" rows="4" required="É necessário informar o pedido" ></textarea>
+
 
           <button type="submit" data-pt="Enviar" data-en="Send">Enviar</button>
         </form>
 
         <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.968078859692!2d-38.44697288471352!3d-12.92793929087119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161b2b415c1453%3A0x1a4be749e9172a9f!2sCentro%20Universit%C3%A1rio%20Jorge%20Amado%20-%20UNIJORGE%20(Campus%20Paralela)!5e0!3m2!1spt-BR!2sbr!4v1713026420804!5m2!1spt-BR!2sbr"
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d817.3862265242071!2d-38.441528186597175!3d-12.961223309834278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161bfcefb0cee3%3A0x4f087036647a2c32!2sIlma%20Caf%C3%A9%20e%20Sabor!5e0!3m2!1spt-BR!2sbr!4v1745941807027!5m2!1spt-BR!2sbr"
               width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              aria-label="Mapa da Unijorge Campus Paralela"
+              aria-label="Mapa do Café & Sabor" 
             ></iframe>
         </div>          
       </div>
@@ -99,9 +142,12 @@
 
   <footer>
     <div class="container">
-      <p data-en="&copy; 2025 Pepeu's Delights - All rights reserved" data-pt="&copy; 2025 Delícias do Pepeu - Todos os direitos reservados">
-            &copy; 2025 Delícias do Pepeu - Todos os direitos reservados
+      <p data-en="&copy; 2025 Cofee & Flavor - All rights reserved" data-pt="&copy; 2025 Café & Sabor - Todos os direitos reservados">
+            &copy; 2025 Café & Sabor - Todos os direitos reservados
       </p>
+    </div>
+    <div class="btn-social">
+      <a href="https://www.instagram.com/ilmacafeesabor/"><button><i class="bi bi-instagram"></i></button></a>
     </div>
   </footer>
 

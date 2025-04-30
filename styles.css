@@ -1,4 +1,3 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #d32f2f;
+    background-color: #793d0d;
     color: white;
     padding: 2rem 0;
 }
@@ -23,6 +22,11 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.Edição-logo{
+  width: 100px;
+  border-radius: 50%;
 }
 
 nav ul {
@@ -91,7 +95,7 @@ nav a:hover {
     display: block;
     margin-top: 1rem;
     font-weight: bold;
-    color: #d32f2f;
+    color: #793d0d;
 }
 
 form {
@@ -104,14 +108,15 @@ form {
 
 input, textarea {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     font-size: 1rem;
+    resize: none;
 }
 
 button {
-    background-color: #d32f2f;
-    color: white;
+    background-color: #793d0d;
+    color: rgb(255, 255, 255);
     padding: 0.75rem;
     font-size: 1rem;
     border: none;
@@ -121,12 +126,12 @@ button {
 }
 
 button:hover {
-    background-color: #b71c1c;
+    background-color: #793d0d;
 }
 
 footer {
-    background-color: #d32f2f;
-    color: white;
+    background-color: #582d0a;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
@@ -163,8 +168,8 @@ footer {
   }
   
   .carousel-btn {
-    background: #d32f2f;
-    color: white;
+    background: #793d0d;
+    color: rgb(255, 255, 255);
     border: none;
     position: absolute;
     top: 50%;
@@ -194,3 +199,64 @@ footer {
   html {
     scroll-behavior: smooth;
   }
+
+ /* dark mode */
+  body {
+    background-color: #fafafa;
+   
+    height: 100vh;
+    margin: 0;
+    transition: background 0.2s linear;
+  }
+  
+  body.dark {
+    background: #292c35;
+  h2{
+    color: #fff;
+  }
+  .section p {
+    color: #fff;
+  }
+ label {
+  color: #fff;
+ }
+  }
+  
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .label {
+    background-color: #6d3507;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+  
+  }
+  
+  .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+ 

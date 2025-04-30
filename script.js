@@ -39,14 +39,16 @@ let currentIndex = 0;
 nextBtn.addEventListener('click', () => {
   const cards = document.querySelectorAll('.carousel .card'); // Todos os cards no carrossel
   const maxIndex = cards.length - 1; // Último índice disponível
-  if (currentIndex < maxIndex) currentIndex++; // Avança se não for o último card
+  if (currentIndex < maxIndex)currentIndex++;// Avança se não for o último card
   updateCarousel(); // Atualiza a posição do carrossel
+  
 });
 
 // Ao clicar no botão "anterior"
 prevBtn.addEventListener('click', () => {
   if (currentIndex > 0) currentIndex--; // Retrocede se não for o primeiro card
   updateCarousel(); // Atualiza a posição do carrossel
+  
 });
 
 // Atualiza a posição da faixa (track) do carrossel com base no índice atual
@@ -76,3 +78,16 @@ toggleBtn.addEventListener("click", () => {
     el.textContent = el.dataset[lang];
   });
 });
+
+
+// ================================
+// Modo escuro
+// ================================
+
+
+
+const chk = document.getElementById('chk')
+
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark')
+})
